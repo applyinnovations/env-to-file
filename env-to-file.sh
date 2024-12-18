@@ -31,7 +31,7 @@ for VAR in "${VARIABLES[@]}"; do
 	# Make readable by all users
 	chmod 644 "${!FILE_PATH_VAR_NAME}"
 
-        echo "Wrote ${!VALUE_VAR_NAME} to ${!FILE_PATH_VAR_NAME}"
+        echo "Wrote to ${!FILE_PATH_VAR_NAME}"
     else
         if [[ -z "${!VALUE_VAR_NAME}" ]]; then
             echo "Warning: No value found for $VAR_UPPER"
